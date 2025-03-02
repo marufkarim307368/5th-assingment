@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header
+      class="w-11/12 mx-auto mt-2 border bg-[#F4F7FF] p-4 rounded-md mb-5"
+    >
+      <nav class="flex justify-between">
+        <div class="flex">
+          <img class="w-10 h-auto" src="./assets/logo.png" alt="" />
+          <h1 class="text-2xl">Dev<span class="font-bold">Board</span></h1>
+        </div>
+        <div class="flex gap-7 relative">
+          <div class="flex gap-2">
+            <img class="w-8 h-8" src="./assets/checkbox.png" alt="" />
+            <h2 id="total" class="text-2xl font-bold">23</h2>
+          </div>
+          <div>
+            <img class="w-8 h-8" src="./assets/theme-btn.png" alt="" />
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <main class="w-11/12 mx-auto">
+      <nav class="flex gap-5">
+        <!-- left container -->
+        <section class="w-3/4 h-auto">
+          <!-- box div -->
+          <section class="flex justify-between mb-10">
+            <!-- box 1 -->
+            <div class="flex items-center gap-5 border bg-[#F4F7FF] p-10">
+              <div>
+                <img class="w-8 h-8" src="./assets/checkbox.png" alt="" />
+              </div>
+              <div>
+                <h2 class="text-[#00303C] text-sm">Task Assigned</h2>
+                <h1 id="taskAssigned" class="text-2xl font-bold">06</h1>
+              </div>
+            </div>
+            <!-- box 2 -->
+            <div
+              class="flex items-center gap-5 border bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] ... p-8"
+            >
+              <div>
+                <img class="w-13 h-13" src="./assets/board.png" alt="" />
+              </div>
+              <div>
+                <h1 class="text-3xl font-bold">
+                  Discover Something <br />
+                  New Today!
+                </h1>
+              </div>
+            </div>
+            <!-- box 3 -->
+            <div class="flex items-center gap-3 border bg-[#F4F7FF] p-5">
+              <div>
+                <img class="w-6 h-6" src="./assets/calender.png" alt="" />
+              </div>
+              <div>
+                <p id="dateTime"></p>
+              </div>
+            </div>
+          </section>
+          <!-- 2nd section -->
+          <section class="grid grid-cols-3 gap-4">
+            <!-- card 1 -->
+            <nav class="border p-3 bg-[#F4F7FF] rounded-lg">
+              <div>
+                <h5 class="text-[#00303C] font-bold mb-5">Shop Ease</h5>
+                <h1 class="font-medium text-2xl text-[#00303C] mb-5">
+                  Fix Mobile Button Issue
+                </h1>
+                <p class="mb-5 text-[#000000] text-base opacity-50">
+                  Debug using Chrome DevTools, check for overlapping elements,
+                  ....
+                </p>
+              </div>
+              <div class="flex items-center justify-between">
+                <div>
+                  <h1 class="text-[#00303C] text-base">Deadline,</h1>
+                  <h1 class="font-bold">21 March 2025</h1>
+                </div>
+                <div>
+                  <button
+                    class="bg-[#3752FD] p-2 rounded-md text-white text-lg btnCompleted"
+                  >
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </nav>
+            <!-- card 2 -->
+            <nav class="border p-3 bg-[#F4F7FF] rounded-lg">
+              <div>
+                <h5 class="text-[#00303C] font-bold mb-5">Cloud Sync</h5>
+                <h1 class="font-medium text-2xl text-[#00303C] mb-5">
+                  Add Dark Mode
+                </h1>
+                <p class="mb-5 text-[#000000] text-base opacity-50">
+                  Store the user's preference in localStorage, update CSS
+                  variables ....
+                </p>
+              </div>
+              <div class="flex items-center justify-between">
+                <div>
+                  <h1 class="text-[#00303C] text-base">Deadline,</h1>
+                  <h1 class="font-bold">21 March 2025</h1>
+                </div>
+                <div>
+                  <button
+                    class="bg-[#3752FD] p-2 rounded-md text-white text-lg btnCompleted"
+                  >
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </nav>
+            <!-- card 3 -->
+            <nav class="border p-3 bg-[#F4F7FF] rounded-lg">
+              <div>
+                <h5 class="text-[#00303C] font-bold mb-5">SwiftPay</h5>
+                <h1 class="font-medium text-2xl text-[#00303C] mb-5">
+                  Optimize Home page 
+                </h1>
+                <p class="mb-5 text-[#000000] text-base opacity-50">
+                  Debug using Chrome DevTools, check for overlapping elements,
+                  .....
+                </p>
+              </div>
+              <div class="flex items-center justify-between">
+                <div>
+                  <h1 class="text-[#00303C] text-base">Deadline,</h1>
+                  <h1 class="font-bold">21 March 2025</h1>
+                </div>
+                <div>
+                  <button
+                    class="bg-[#3752FD] p-2 rounded-md text-white text-lg btnCompleted"
+                  >
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </nav>
+            <!-- card 4 -->
+            <nav class="border p-3 bg-[#F4F7FF] rounded-lg">
+              <div>
+                <h5 class="text-[#00303C] font-bold mb-5">Meta</h5>
+                <h1 class="font-medium text-2xl text-[#00303C] mb-5">
+                  Add new emoji 🤲
+                </h1>
+                <p class="mb-5 text-[#000000] text-base opacity-50">
+                  Debug using Chrome DevTools, check for overlapping elements,
+                  ......
+                </p>
+              </div>
+              <div class="flex items-center justify-between">
+                <div>
+                  <h1 class="text-[#00303C] text-base">Deadline,</h1>
+                  <h1 class="font-bold">21 March 2025</h1>
+                </div>
+                <div>
+                  <button
+                    class="bg-[#3752FD] p-2 rounded-md text-white text-lg btnCompleted"
+                  >
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </nav>
+            <!-- card 5 -->
+            <nav class="border p-3 bg-[#F4F7FF] rounded-lg">
+              <div>
+                <h5 class="text-[#00303C] font-bold mb-5">Google LLC</h5>
+                <h1 class="font-medium text-2xl text-[#00303C] mb-5">
+                  Integrate OpenAI API
+                </h1>
+                <p class="mb-5 text-[#000000] text-base opacity-50">
+                  Debug using Chrome DevTools, check for overlapping elements,
+                  ......
+                </p>
+              </div>
+              <div class="flex items-center justify-between">
+                <div>
+                  <h1 class="text-[#00303C] text-base">Deadline,</h1>
+                  <h1 class="font-bold">21 March 2025</h1>
+                </div>
+                <div>
+                  <button
+                    class="bg-[#3752FD] p-2 rounded-md text-white text-lg btnCompleted"
+                  >
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </nav>
+            <!-- card 6 -->
+            <nav class="border p-3 bg-[#F4F7FF] rounded-lg">
+              <div>
+                <h5 class="text-[#00303C] font-bold mb-5">Glassdoar</h5>
+                <h1 class="font-medium text-2xl text-[#00303C] mb-5">
+                  Improve Job searching
+                </h1>
+                <p class="mb-5 text-[#000000] text-base opacity-50">
+                  Debug using Chrome DevTools, check for overlapping elements,
+                  .....
+                </p>
+              </div>
+              <div class="flex items-center justify-between">
+                <div>
+                  <h1 class="text-[#00303C] text-base">Deadline,</h1>
+                  <h1 class="font-bold">21 March 2025</h1>
+                </div>
+                <div>
+                  <button
+                    class="bg-[#3752FD] p-2 rounded-md text-white text-lg btnCompleted"
+                  >
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </nav>
+          </section>
+        </section>
+
+        <!-- right container -->
+        <section class="w-1/4 h-auto bg-[#F4F7FF]">
+          <nav class="mt-10">
+            <div class="flex justify-center items-center gap-5">
+              <img src="./assets/activity.png" alt="" />
+              <h2 class="text-[20px] font-medium text-[#00303C]">
+                My Activity
+              </h2>
+            </div>
+            <div class="flex justify-center">
+              <button
+                class="bg-[#3752FD] p-2 rounded-md text-white text-lg mt-3"
+              >
+                Clear History
+              </button>
+            </div>
+          </nav>
+        </section>
+      </nav>
+    </main>
+    <script src="./js/button.js"></script>
+  </body>
+</html>
