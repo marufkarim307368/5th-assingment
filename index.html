@@ -22,7 +22,12 @@
             <h2 id="total" class="text-2xl font-bold">23</h2>
           </div>
           <div>
-            <img class="w-8 h-8" src="./assets/theme-btn.png" alt="" />
+            <img
+              id="image"
+              class="w-8 h-8"
+              src="./assets/theme-btn.png"
+              alt=""
+            />
           </div>
         </div>
       </nav>
@@ -42,12 +47,13 @@
               </div>
               <div>
                 <h2 class="text-[#00303C] text-sm">Task Assigned</h2>
-                <h1 id="taskAssigned" class="text-2xl font-bold">06</h1>
+                <h1 id="taskAssigned" class="text-2xl font-bold">6</h1>
               </div>
             </div>
             <!-- box 2 -->
             <div
-              class="flex items-center gap-5 border bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] ... p-8"
+              id="discoverBox"
+              class="flex items-center gap-5 border bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] ... p-8 text-white"
             >
               <div>
                 <img class="w-13 h-13" src="./assets/board.png" alt="" />
@@ -234,16 +240,22 @@
         <section class="w-1/4 h-auto bg-[#F4F7FF]">
           <nav class="mt-10">
             <div class="flex justify-center items-center gap-5">
-              <img src="./assets/activity.png" alt="" />
-              <h2 class="text-[20px] font-medium text-[#00303C]">
-                My Activity
-              </h2>
+              <div>
+                <img src="./assets/activity.png" alt="" />
+              </div>
+              <div id="activity">
+                <h2 class="text-[20px] font-medium text-[#00303C]">
+                  My Activity
+                </h2>
+                <ul id="activityList"></ul>
+              </div>
             </div>
             <div class="flex justify-center">
               <button
+                id="clearActivity"
                 class="bg-[#3752FD] p-2 rounded-md text-white text-lg mt-3"
               >
-                Clear History
+                Clear Activity
               </button>
             </div>
           </nav>

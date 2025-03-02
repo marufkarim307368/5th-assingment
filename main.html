@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header
+      class="w-11/12 mx-auto mt-2 border bg-[#F4F7FF] p-4 rounded-md mb-5"
+    >
+      <nav class="flex justify-between">
+        <div class="flex items-center">
+          <img class="w-10 h-auto" src="./assets/logo.png" alt="" />
+          <h1 class="text-2xl">Dev<span class="font-bold">Board</span></h1>
+        </div>
+        <div>
+          <div
+            id="backBtn"
+            class="p-3 border bg-blue-600 text-white rounded-md font-semibold"
+          >
+            Back to home
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main -->
+
+    <main class="w-11/12 mx-auto mt-2 border bg-[#F4F7FF] p-4 rounded-md mb-5">
+      <div class="">
+        <h1 class="text-2xl font-semibold mb-5">
+          Question-1: What are the different ways to select an element in the
+          DOM?
+        </h1>
+        <p class="flex justify-center">
+          DOM-এ কোনো উপাদান সিলেক্ট করার জন্য কিছু পদ্ধতি আছে: getElementById(),
+          getElementsByClassName(), getElementsByTagName(), querySelector()
+          এগুলো হলো DOM-এ উপাদান সিলেক্ট করার কিছু প্রধান পদ্ধতি
+        </p>
+      </div>
+      <div class="mt-10">
+        <h1 class="text-2xl font-semibold mb-5">
+          Question-2: What is the difference between innerHTML, innerText, and
+          textContent ?
+        </h1>
+        <p class="">
+          innerHTML: HTML ট্যাগসহ সব কিছু রিটার্ন করে বা সেট করে। <br />
+          innerText: শুধুমাত্র দৃশ্যমান টেক্সট রিটার্ন করে বা সেট করে। <br />
+          textContent: সমস্ত টেক্সট রিটার্ন করে।
+        </p>
+      </div>
+      <div class="mt-10">
+        <h1 class="text-2xl font-semibold mb-5">
+          Question-3: What is event delegation in the DOM?
+        </h1>
+        <p>
+          ইভেন্ট ডেলিগেশন (Event Delegation) হল একটি টেকনিক যা আপনাকে একে একে
+          একাধিক উপাদানে ইভেন্ট অ্যাটাচ করার বদলে, একটি প্যারেন্ট উপাদানে ইভেন্ট
+          হ্যান্ডলার অ্যাটাচ করতে দেয়।
+        </p>
+      </div>
+      <div class="mt-10">
+        <h1 class="text-2xl font-semibold mb-5">
+          Question-4: What is event bubbling in the DOM?
+        </h1>
+        <p>
+          ইভেন্ট ববলিং হল একটি প্রক্রিয়া যেখানে ইভেন্ট একটি চাইল্ড উপাদানে ঘটার
+          পর, সেটি তার প্যারেন্ট উপাদান এবং উপরের স্তরের উপাদানগুলিতে চলে যায়।
+        </p>
+      </div>
+      <div class="mt-10">
+        <h1 class="text-2xl font-semibold mb-5">
+          Question-5: How do you create, add, and remove elements using
+          JavaScript?
+        </h1>
+        <p>
+          createElement() দিয়ে নতুন উপাদান তৈরি করা হয়। <br />
+          appendChild(), prepend(), insertBefore() মেথড দিয়ে উপাদান যোগ করা হয়।
+          <br />
+          removeChild(), remove() দিয়ে উপাদান মুছে ফেলা হয়।
+        </p>
+      </div>
+    </main>
+    <script>
+      document.getElementById("backBtn").addEventListener("click", function () {
+        window.history.back();
+      });
+    </script>
+  </body>
+</html>
